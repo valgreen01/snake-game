@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Snake Game</title>
+  <style>
+    /* Add some basic styling to center the game on the page */
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body,
+    #score {
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: #000; */
+      background: linear-gradient(120deg, #84fab0 0%, #1aa5eb 100%);
+      margin: 0;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: auto;
+    }
+
+    #game {
+      /* background-color: #fff; */
+      /* border: 3px solid green; */
+      padding: 20px;
+      border: 3px solid #fff;
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    #score {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <!-- Display the score of the player -->
+    <div id="score">Score: 0</div>
+    <!-- Create a canvas for the game -->
+    <canvas id="game" width="512" height="512"></canvas>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script src="snake.js"></script>
+</body>
+
+</html>
